@@ -1,0 +1,199 @@
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 11.4rem;
+  height: 8rem;
+  background-color: var(--pink);
+  box-shadow: 0 0 0.3rem 0 var(--primary);
+}
+header > .linkNavigation {
+  display: flex;
+  align-items: center;
+}
+header > .linkNavigation > a {
+  color: var(--black-light);
+  margin-left: 5rem;
+}
+#Inicio {
+  display: flex;
+  align-items: center;
+  padding: 9.8rem 11.4rem;
+  flex-direction: row;
+  width: 100%;
+  background-color: var(--pink);
+}
+#Inicio > div:nth-child(1) > h2 {
+  width: 80%;
+}
+#Inicio > div:nth-child(1) > p {
+  width: 92%;
+  margin-top: 2.4rem;
+  margin-bottom: 4rem;
+}
+#Acessorios {
+  padding: 4.8rem 11.4rem;
+  background-color: var(--white);
+}
+#Acessorios > .introAcessorios {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#Acessorios > .introAcessorios > p {
+  width: 45%;
+  text-align: center;
+  font-weight: 400;
+  color: var(--gray-200);
+  margin-bottom: 3.2rem;
+}
+#Acessorios > .gifts {
+  display: flex;
+  justify-content: space-between;
+}
+#Acessorios > .gifts > article {
+  width: 20rem;
+  text-align: center;
+}
+#Acessorios > .gifts > article > p {
+  color: var(--gray);
+}
+#Doacao {
+  width: 100%;
+  padding: 9rem 11.4rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--pink);
+  align-items: center;
+}
+#Doacao > div:nth-child(2) {
+  width: 50%;
+}
+#Doacao > div:nth-child(2) > p {
+  width: 85%;
+  margin-top: 2.4rem;
+  margin-bottom: 3.2rem;
+}
+footer {
+  padding: 5rem 11.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--white);
+}
+footer > .socialMedia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+footer > .socialMedia > a {
+  margin-left: 4.2rem;
+  background-color: var(--pink);
+  padding: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10rem;
+}
+footer > .socialMedia > a > svg {
+  stroke: var(--primary);
+}
+
+@media screen and (max-width: 961px) {
+  header {
+    padding: 0 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  header > .linkNavigation > a {
+    display: none;
+  }
+  #Inicio {
+    flex-direction: column;
+    padding: 9.8rem 6rem;
+    text-align: center;
+  }
+  #Inicio > div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #Inicio > div:nth-child(1) > h2 {
+    width: 100%;
+  }
+  #Inicio > div:nth-child(1) > p {
+    width: 100%;
+    margin-top: 2.4rem;
+    margin-bottom: 4rem;
+  }
+  #Acessorios {
+    padding: 4.8rem 6rem;
+  }
+  #Acessorios > .introAcessorios > p {
+    width: 100%;
+  }
+  #Acessorios > .gifts {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    object-fit: contain;
+  }
+  #Acessorios > .gifts > article {
+    width: 20rem;
+    text-align: center;
+  }
+  #Doacao {
+    flex-direction: column;
+    padding: 9rem 6rem;
+  }
+  #Doacao > div:nth-child(2) {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  #Doacao > div:nth-child(2) > p {
+    width: 100%;
+    margin-top: 2.4rem;
+    margin-bottom: 3.2rem;
+  }
+  footer {
+    flex-direction: column;
+    padding: 5rem 0rem;
+  }
+  footer > .socialMedia {
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  #Inicio {
+    padding: 9.8rem 1rem;
+  }
+  #Acessorios {
+    padding: 4.8rem 1rem;
+  }
+  #Doacao {
+    padding: 9rem 1rem;
+  }
+  footer > .socialMedia {
+    flex-direction: column;
+  }
+  footer > .socialMedia > a {
+    margin-left: 0;
+    margin-bottom: 2rem;
+    padding: 1.4rem;
+  }
+}
+@media screen and (max-width: 410px) {
+  #Acessorios > .gifts {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+}

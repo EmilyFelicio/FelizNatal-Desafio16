@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all .5s ease-in-out;
+}
+
+body {
+  --primary: #da2535;
+  --pink: #f7c7b9;
+  --white: #f9f9f9;
+  --gray: #8d8d8d;
+  --gray-200: #404040;
+  --black-light: #161223;
+}
+body.darkMode {
+  --primary: #ffb8be;
+  --pink: #ad0202;
+  --white: #7f0000;
+  --gray: #dbdbdb;
+  --gray-200: #ffffff;
+  --black-light: #e2ffe1;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  font-size: 2.4rem;
+  color: var(--black-light);
+}
+h2 {
+  font-size: 4.8rem;
+  color: var(--black-light);
+}
+h3 {
+  color: var(--black-light);
+  font-size: 2rem;
+}
+p {
+  color: var(--gray-200);
+}
+p,
+a {
+  font-size: 1.6rem;
+}
+button > p {
+  color: var(--white);
+}
+a {
+  text-decoration: none;
+  color: var(--black-light);
+}
+#doDonate {
+  display: flex;
+  align-items: center;
+  padding: 1.2rem 3.3rem;
+  background-color: var(--primary);
+  color: var(--white);
+  font-family: "Poppins", sans-serif;
+  border: none;
+  border-radius: 0.8rem;
+}
+#doDonate > svg {
+  margin-right: 1.2rem;
+}
+.logoInicio {
+  display: flex;
+  align-items: center;
+}
+.logoInicio > h1 {
+  margin-left: 1.4rem;
+}
+.giftSvg {
+  stroke: var(--white);
+}
+.imgPerc {
+  width: 100%;
+}
+
+#toggle-btn {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 5rem;
+  height: 2rem;
+  border-radius: 2rem;
+  background-color: var(--primary);
+  position: relative;
+  outline: 0;
+  cursor: pointer;
+  margin-left: 5rem;
+}
+#toggle-btn::before {
+  content: "";
+  height: 2rem;
+  width: 2rem;
+  border-radius: 2rem;
+  transform: translateX(0) scale(0.8);
+  background: var(--white);
+  position: absolute;
+  transition-property: transform, background;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+#toggle-btn:checked {
+  background-color: var(--primary);
+  transition-property: transform, background;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+#toggle-btn:checked::before {
+  transform: translateX(3rem) scale(0.8);
+  background: var(--white);
+}
+
+button:hover {
+  filter: saturate(2);
+  cursor: pointer;
+}
+.linkNavigation > a:hover {
+  color: var(--primary);
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+  h2 {
+    font-size: 4.6rem;
+  }
+  h3 {
+    font-size: 1.8rem;
+  }
+  p,
+  a {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 290px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 4.4rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+  }
+  p,
+  a {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 254px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+  }
+  p,
+  a {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 236px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+  h2 {
+    font-size: 3.4rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+  }
+  p,
+  a {
+    font-size: 1.2rem;
+  }
+  #toggle-btn {
+    display: none;
+  }
+}
+@media screen and (max-width: 200px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+  h2 {
+    font-size: 2.6rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+  }
+  p,
+  a {
+    font-size: 1.2rem;
+  }
+  #toggle-btn {
+    display: none;
+  }
+}
