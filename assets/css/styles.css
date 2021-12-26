@@ -22,6 +22,7 @@ header > .linkNavigation > a {
   padding: 9.8rem 11.4rem;
   flex-direction: row;
   width: 100%;
+  min-height: 85vh;
   background-color: var(--pink);
 }
 #Inicio > div:nth-child(1) > h2 {
@@ -196,4 +197,45 @@ footer > .socialMedia > a > svg {
     width: 100%;
     align-items: center;
   }
+}
+
+/*Animation*/
+[data-anime] {
+  opacity: 0;
+}
+[data-anime="left"] {
+  transform: translate3d(-50px, 0, 0);
+  transition: 1s;
+}
+[data-anime="right"] {
+  transform: translate3d(50px, 0, 0);
+  transition: 1.5s;
+}
+[data-anime="top"] {
+  transform: translate3d(0, -25px, 0);
+  transition: 1s;
+}
+[data-anime="bottom"] {
+  transform: translate3d(0, 50px, 0);
+  transition: .5s;
+}
+[data-anime="bottom-first"] {
+  transform: translate3d(0, 50px, 0);
+  transition: 1.5s;
+}
+[data-anime="bottom-second"] {
+  transform: translate3d(0, 50px, 0);
+  transition: 2.5s;
+}
+[data-anime="bottom-third"] {
+  transform: translate3d(0, 50px, 0);
+  transition: 3.5s;
+}
+[data-anime="bottom-fourth"] {
+  transform: translate3d(0, 50px, 0);
+  transition: 4.5s;
+}
+[data-anime].animate {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
 }
