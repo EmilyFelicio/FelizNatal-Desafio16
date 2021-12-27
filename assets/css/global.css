@@ -56,7 +56,7 @@ a {
   text-decoration: none;
   color: var(--black-light);
 }
-#doDonate {
+.doDonate {
   display: flex;
   align-items: center;
   padding: 1.2rem 3.3rem;
@@ -66,7 +66,7 @@ a {
   border: none;
   border-radius: 0.8rem;
 }
-#doDonate > svg {
+.doDonate > svg {
   margin-right: 1.2rem;
 }
 .logoInicio {
