@@ -14,6 +14,7 @@ body {
   --gray: #8d8d8d;
   --gray-200: #404040;
   --black-light: #161223;
+  --light-shadow: #8a24249d;
 }
 body.darkMode {
   --primary: #ffb8be;
@@ -22,6 +23,7 @@ body.darkMode {
   --gray: #dbdbdb;
   --gray-200: #ffffff;
   --black-light: #e2ffe1;
+  --light-shadow: #570000;
 }
 html {
   font-size: 62.5%;
@@ -82,7 +84,11 @@ a {
 .imgPerc {
   width: 100%;
 }
-
+.imgPerc:hover {
+  cursor: pointer;
+  width: 110%;
+  filter: drop-shadow( 2px 10px 5px var(--light-shadow));
+}
 #toggle-btn {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -127,6 +133,18 @@ button:hover {
   color: var(--primary);
 }
 
+::-webkit-scrollbar {
+  width: 1.6rem;
+}
+::-webkit-scrollbar-track {
+  width: 1.6rem;
+  background-color: var(--primary);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--pink);
+  border-radius: .8rem;
+  border: .4rem solid var(--primary);
+}
 @media screen and (max-width: 480px) {
   h1 {
     font-size: 2.2rem;
