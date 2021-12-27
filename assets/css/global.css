@@ -32,6 +32,10 @@ html {
 body {
   font-family: "Poppins", sans-serif;
 }
+img {
+  width: auto;
+  height: auto;
+}
 h1 {
   font-size: 2.4rem;
   color: var(--black-light);
@@ -83,6 +87,7 @@ a {
 }
 .imgPerc {
   width: 100%;
+  height: auto;
 }
 .imgPerc:hover {
   cursor: pointer;
